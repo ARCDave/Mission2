@@ -1,55 +1,64 @@
 ﻿$("#btnCheck").click(function () {
+    /*I have never written in Javascript as I took cs 142, be nice pleeeeease*/
 
-    alert("From: " + $("#assignments").value +
-        ", Subject: " + $("#groupProject").value +
-        ", Message: " + $("#quizzes").value);
-
-    var assignments = $("#assignments").value;
-    var groupProject = $("#groupProject").value;
-    var quizzes = $("#quizzes").value;
-    var exam = $("#exam").value;
-    var intex = $("#intex").value;
+    /* pre-sets the variables to numbers because that was an issue for a bit, I think thats fixed so probably not needed*/
+    let assigments = 0.0;
+    let groupProject = 0.0;
+    let quizzes = 0.0;
+    let exam = 0.0;
+    let intex = 0.0;
 
 
-    var gpa = ((assignments * .55) + (groupProject * .05) + (quizzes * .10) + (exam * .20) + (intex * .10));
+    assigments = $("#assignments").val();
+    groupProject = $("#groupProject").val();
+    quizzes = $("#quizzes").val();
+    exam = $("#exams").val();
+    intex = $("#intex").val();
+    
+
+    /* equation for calculating GPA based off of sylabus*/
+    let gpa = Math.round((assigments * .55) + (groupProject * .05) + (quizzes * .10) + (exam * .20) + (intex * .10)).toFixed(2);
+
+
+    let grade = "";
 
     if (gpa >= 94) {
         grade = "A";
     }
-    if (gpa >= 90 & gpa < 94) {
+    else if (gpa >= 90) {
         grade = "A-";
     }
-    if (gpa >= 87 & gpa < 90) {
+    else if (gpa >= 87) {
         grade = "B+";
     }
-    if (gpa >= 84 & gpa < 87) {
+    else if (gpa >= 84) {
         grade = "B";
     }
-    if (gpa >= 80 & gpa < 84) {
+    else if (gpa >= 80) {
         grade = "B-";
     }
-    if (gpa >= 77 & gpa < 80) {
+    else if (gpa >= 77) {
         grade = "C+";
     }
-    if (gpa >= 74 & gpa < 77) {
+    else if (gpa >= 74) {
         grade = "C";
     }
-    if (gpa >= 70 & gpa < 74) {
+    else if (gpa >= 70) {
         grade = "C-";
     }
-    if (gpa >= 67 & gpa < 70) {
+    else if (gpa >= 67) {
         grade = "D+";
     }
-    if (gpa >= 64 & gpa < 67) {
+    else if (gpa >= 64) {
         grade = "D";
     }
-    if (gpa >= 60 & gpa < 64) {
+    else if (gpa >= 60) {
         grade = "D-";
     }
-    if (gpa < 60) {
-        grade = "E"
+    else {
+        grade = "E";
     }
 
-    alert("Your Grade is: " + grade)
+    alert("Your Grade is: " + gpa + "% " + grade);
 })
 
