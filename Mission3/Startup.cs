@@ -33,7 +33,6 @@ namespace Mission3
 
             app.UseEndpoints(endpoints =>
             {     
-                
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controler=Fun}/{action=Index}/{id?}"

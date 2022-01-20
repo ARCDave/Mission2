@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mission3.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace Mission3.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Calc (object model)
+        public IActionResult Calc (CalcModel model)
         {
             return View();
         }
