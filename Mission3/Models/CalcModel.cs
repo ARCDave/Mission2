@@ -9,15 +9,15 @@ namespace Mission3.Models
     public class CalcModel
     {
         [Range(0, 100)]
-        public float Assignments { get; set; }
+        public double Assignments { get; set; }
 
-        public float Group_Projects { get; set; }
+        public double Group_Projects { get; set; }
 
-        public float Quizzes { get; set; }
+        public double Quizzes { get; set; }
 
-        public float Exams { get; set; }
+        public double Exams { get; set; }
 
-        public float Intex { get; set; }
+        public double Intex { get; set; }
 
     }
 }

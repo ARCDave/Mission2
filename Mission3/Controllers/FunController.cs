@@ -18,8 +18,9 @@ namespace Mission3.Controllers
         {
             return View();
         }
+
         [HttpPost]
-        public IActionResult Calc (CalcModel model)
+        public IActionResult Calc(CalcModel model)
         {
             return View();
         }

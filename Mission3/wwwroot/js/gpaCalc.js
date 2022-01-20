@@ -1,6 +1,5 @@
 ﻿$("#btnCheck").click(function () {
     /*I have never written in Javascript as I took cs 142, be nice pleeeeease*/
-
     /* pre-sets the variables to numbers because that was an issue for a bit, I think thats fixed so probably not needed*/
     let assigments = 0.0;
     let groupProject = 0.0;
