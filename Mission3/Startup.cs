@@ -26,6 +26,7 @@ namespace Mission3
             {
                 app.UseDeveloperExceptionPage();
             }
+
             app.UseStaticFiles();
 
             app.UseRouting();

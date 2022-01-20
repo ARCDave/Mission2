@@ -8,14 +8,17 @@ namespace Mission3.Controllers
 {
     public class FunController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index ()
         {
-           
-
             return View();
         }
-        
-        public IActionResult Calc()
+        [HttpGet]
+        public IActionResult Calc ()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Calc (object model)
         {
             return View();
         }
