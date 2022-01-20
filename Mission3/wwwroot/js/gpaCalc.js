@@ -1,4 +1,4 @@
-﻿$("#btnCheck").click(function () {
+﻿$("#btnCheck").submit(function () {
     /*I have never written in Javascript as I took cs 142, be nice pleeeeease*/
     /* pre-sets the variables to numbers because that was an issue for a bit, I think thats fixed so probably not needed*/
     let assigments = 0.0;
@@ -13,7 +13,7 @@
     quizzes = $("#quizzes").val();
     exam = $("#exams").val();
     intex = $("#intex").val();
-    
+
 
     /* equation for calculating GPA based off of sylabus*/
     let gpa = Math.round((assigments * .55) + (groupProject * .05) + (quizzes * .10) + (exam * .20) + (intex * .10)).toFixed(2);
@@ -59,5 +59,4 @@
     }
 
     alert("Your Grade is: " + gpa + "% " + grade);
-})
-
+});

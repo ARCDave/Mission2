@@ -7,14 +7,15 @@
 
 @model CalcModel
 
+
 <!--Takes the different catagories for the grades in a form so you can use them in JS-->
 <h2>GPA Calc</h2>
-<form method="post">
+<form  method="post">
     <label>Assignment Grade:</label>
     <input id="assignments" asp-for="Assignments" />
     <br />
     <label>Group Project Grade:</label>
-    <input id="groupProject" asp-for="Group_Projects"/>
+    <input id="groupProject" asp-for="GroupProjects"/>
     <br />
     <label>Quizzes Grade:</label>
     <input id="quizzes" asp-for="Quizzes"/>
