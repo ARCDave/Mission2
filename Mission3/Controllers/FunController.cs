@@ -9,12 +9,12 @@ namespace Mission3.Controllers
 {
     public class FunController : Controller
     {
-        public IActionResult Index ()
+        public IActionResult Index()
         {
             return View();
         }
         [HttpGet]
-        public IActionResult Calc ()
+        public IActionResult Calc()
         {
             return View();
         }

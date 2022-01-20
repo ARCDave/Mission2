@@ -35,7 +35,7 @@ namespace Mission3
             {     
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controler=Fun}/{action=Index}/{id?}"
+                    pattern: "{controller=Fun}/{action=Index}/{id?}"
                 );
             });
 
